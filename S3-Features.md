@@ -1,4 +1,4 @@
-## AWS S3 Advanced Features
+# **AWS S3 Advanced Features**
 
 This document provides an in-depth look at key **AWS S3** features that enhance data management, security, and performance.
 
@@ -134,6 +134,55 @@ Enable Transfer Acceleration for a bucket using AWS CLI:
 ```sh
 aws s3api put-bucket-accelerate-configuration --bucket my-bucket --accelerate-configuration Status=Enabled
 ```
+
+---
+
+## **7️⃣ Amazon S3 Bucket Types**
+### **🔹 General Purpose Buckets**
+Designed for standard storage needs, supporting various operations like hosting, backups, and analytics.
+
+### **🔹 Directory Buckets**
+Enable hierarchical organization of data for large-scale storage needs.
+
+### **🔹 Table Buckets**
+Optimized for structured data storage, integrating with AWS services like Athena and Glue.
+
+---
+
+## **8️⃣ Access Management Features**
+### **🔹 Access Grants**
+Allow external users to access S3 resources with controlled permissions.
+
+### **🔹 Access Points**
+Create different access control policies per use case without modifying the bucket policy.
+
+### **🔹 Object Lambda Access Points**
+Enable on-the-fly data transformations when objects are accessed.
+
+### **🔹 Multi-Region Access Points**
+Provide a single access point to distribute traffic across multiple AWS regions.
+
+---
+
+## **9️⃣ S3 Batch Operations**
+### **🔹 What is it?**
+S3 Batch Operations allow large-scale operations on millions or billions of objects in S3.
+
+### **💡 Use Cases**
+- Bulk object tagging.
+- Mass deletion or restoration of files.
+- Applying new access controls across large datasets.
+
+---
+
+## **🔟 IAM Access Analyzer for S3**
+### **🔹 What is it?**
+IAM Access Analyzer for S3 helps identify misconfigured permissions that might expose data unintentionally.
+
+### **💡 Use Cases**
+- Ensuring S3 buckets are not publicly exposed.
+- Auditing IAM roles and policies for compliance.
+- Detecting access granted to external AWS accounts.
 
 ---
 
